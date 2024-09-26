@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color:powderblue;">
+    <!-- can change background color of whole body using:  <body style="background-color:powderblue;">-->
+    <!-- change font size -->
+    <p style="font-size:50px;">I am big</p>
+    <br>
+    <p>headings</p>
+    <h1>1st heading</h1>
+    <h2>2nd heading</h2>
+    <h3>3rd heading</h3>
+    <h4>4th heading</h4>
+    <h5>5th heading</h5>
+    <h6>6th heading</h6>
+    <h7>7th heading is like a paragraph and so on...</h7>
+
+    <p>Text alignment</p>
+    <h1 style="text-align:center;">Centered Heading</h1>
+    <p style="text-align:center;">Centered paragraph.</p>
+    
+    <!-- <br> to create new line -->
+    <br>
+    <pr> this is a paragraph using "pr" tag</pr>
+    <br>
+    <br>
+    
+    <!-- Pre tag using "<pre>" tag -->
+    <pre>** pre tag helps the 
+                 paragraph to be 
+                        as it is written : </pre>
+    
+    <pre>** Add link of other web page[using { (a href="")(/a) 
+                                  and use less than and greater than symbols instead of () } </pre>
+    <a href="https://www.google.com"> => google web link</a>
+    <br>
+    <br>
+    <p>**Color :</p>
+    <br>
+    <!-- adding background colour using style="background-color:......" -->
+    <h1 style="background-color: gold">H1 Heading</h1>
+    <p style="background-color:tomato;">This is a paragraph.</p>
+    <p style="color:red;">I am red</p>
+    <p style="color:blue;">I am blue</p>
+    <h1 style="border:2px solid Tomato;">Hello World</h1>
+    <h1 style="border:2px solid DodgerBlue;">Hello World</h1>
+
+
+    <pre>
+    
+    <pre>
+    **RGB Color Values: 
+
+    => In HTML, a color can be specified as an RGB value, using this formula: rgb(red, green, blue)
+    => Each parameter (red, green, and blue) defines the intensity of the color with a value between 0 and 255.
+    => This means that there are 256 x 256 x 256 = 16777216 possible colors!
+    
+    For example, rgb(255, 0, 0) is displayed as red, because red is set to its highest value (255), and the other two (green and blue) are set to 0.
+    Another example, rgb(0, 255, 0) is displayed as green, because green is set to its highest value (255), and the other two (red and blue) are set to 0.
+        
+    => To display black, set all color parameters to 0, like this: rgb(0, 0, 0).
+    => To display white, set all color parameters to 255, like this: rgb(255, 255, 255).
+        
+    Experiment by mixing the RGB values below:</pre>    
+    <h3 style="background-color:rgb(255, 0, 0);">rgb(255, 0, 0)</h3>
+    <h3 style="background-color:rgb(0, 0, 255);">rgb(0, 0, 255)</h3>
+    <h3 style="background-color:rgb(60, 179, 113);">rgb(60, 179, 113)</h3>
+    <h3 style="background-color:rgb(238, 130, 238);">rgb(238, 130, 238)</h3>
+    <h3 style="background-color:rgb(255, 165, 0);">rgb(255, 165, 0)</h3>
+    <h3 style="background-color:rgb(106, 90, 205);">rgb(106, 90, 205)</h3>
+
+    Shades of Gray: 
+    
+    <h3 style="background-color:rgb(60, 60, 60);">rgb(60, 60, 60)</h3>
+    <h3 style="background-color:rgb(100, 100, 100);">rgb(100, 100, 100)</h3>
+    <h3 style="background-color:rgb(140, 140, 140);">rgb(140, 140, 140)</h3>
+    <h3 style="background-color:rgb(180, 180, 180);">rgb(180, 180, 180)</h3>
+    <h3 style="background-color:rgb(200, 200, 200);">rgb(200, 200, 200)</h3>
+    <h3 style="background-color:rgb(240, 240, 240);">rgb(240, 240, 240)</h3>
+        
+        
+        
+    **RGBA Color Values:
+
+    => RGBA color values are an extension of RGB color values with an Alpha channel - which specifies the opacity for a color.
+    => An RGBA color value is specified with: rgba(red, green, blue, alpha)
+    => The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all):
+
+    Experiment by mixing the RGBA values below:
+    <h3 style="background-color:rgba(255, 99, 71, 0);">rgba(255, 99, 71, 0)</h3>
+    <h3 style="background-color:rgba(255, 99, 71, 0.2);">rgba(255, 99, 71, 0.2)</h3>
+    <h3 style="background-color:rgba(255, 99, 71, 0.4);">rgba(255, 99, 71, 0.4)</h3>
+    <h3 style="background-color:rgba(255, 99, 71, 0.6);">rgba(255, 99, 71, 0.6)</h3>
+    <h3 style="background-color:rgba(255, 99, 71, 0.8);">rgba(255, 99, 71, 0.8)</h3>
+    <h3 style="background-color:rgba(255, 99, 71, 1);">rgba(255, 99, 71, 1)</h3>
+    
+    **HEX Color Values:
+
+    In HTML, a color can be specified using a hexadecimal value in the form: #rrggbb
+    Where rr (red), gg (green) and bb (blue) are hexadecimal values between 00 and ff (same as decimal 0-255).
+
+    For example, #ff0000 is displayed as red, because red is set to its highest value (ff), and the other two (green and blue) are set to 00.
+    Another example, #00ff00 is displayed as green, because green is set to its highest value (ff), and the other two (red and blue) are set to 00.
+
+    To display black, set all color parameters to 00, like this: #000000.
+    To display white, set all color parameters to ff, like this: #ffffff.
+
+    Experiment by mixing the HEX values below:
+    <h3 style="background-color:#ff0000;">#ff0000</h3>
+    <h3 style="background-color:#0000ff;">#0000ff</h3>
+    <h3 style="background-color:#3cb371;">#3cb371</h3>
+    <h3 style="background-color:#ee82ee;">#ee82ee</h3>
+    <h3 style="background-color:#ffa500;">#ffa500</h3>
+    <h3 style="background-color:#6a5acd;">#6a5acd</h3>
+
+    Shades of Gray: 
+
+    <h3 style="background-color:#404040;">#404040</h3>
+    <h3 style="background-color:#686868;">#686868</h3>
+    <h3 style="background-color:#a0a0a0;">#a0a0a0</h3>
+    <h3 style="background-color:#bebebe;">#bebebe</h3>
+    <h3 style="background-color:#dcdcdc;">#dcdcdc</h3>
+    <h3 style="background-color:#f8f8f8;">#f8f8f8</h3>
+    </pre>
+    
+    <pr>**Unorderd list using "ul" tag </pr>
+    <!-- Unorderd list using "<ul>" tag -->
+    <ul>
+        <li>maggi</li>
+        <li>kurkure</li>
+        <li>lays</li>
+    </ul>
+
+    <pr>**And Ordered list using "ol" tag </pr>
+    <!-- ordered list using "<ol>" tag -->
+    <ol>
+        <li>subah utho then,</li>
+        <li>fresh ho, brush kro then,</li>
+        <li>class jao. that's it</li>
+    </ol>
+
+    <pre>//shortcut:
+
+        Unorderd list use = ul>li*3 (3 for no. of lists)
+        and 
+        Orderd list use = ol>li*3 (3 for no. of lists)
+
+        it's called using of emit        </pre>
+    
+    <br>    
+    <pr>**Creating table:</pr>
+    <!-- create table using "<table>"  -->
+    <table>
+        <tr>  <!-- table row -->
+            <td>sr. no</td>
+            <td>name</td>
+            <td>login</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+    </table> 
+    <br> 
+    <pre> //Shortcut:
+         table>(tr>td*3)*3 (inside a table there are table rows and inside them 3 td are created and all these 3 times )
+    </pre> 
+    
+    <!-- Add image address in first double colon in second add ref. of that pic -->
+    <p>**Image tag using: img src="" alt=""</p>
+     <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.jagrantv.com%2Famp-stories-en%2Feducation%2Fchhatrapati-shivaji-maharaj-the-great-maratha-king-a-guide-chhatrapati-shivaji-jayanti-ws3024&psig=AOvVaw3-SMvBsKic5Ng0u0NaH8I3&ust=1684134272662000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCKiT05uf9P4CFQAAAAAdAAAAABAE"
+      alt = "Shivaji pic">
+    
+
+
+    <p>** Also Can use strong instead of bold : </p>
+    <P>** can strike the word/sentence using  "< s>" tag: </P>
+    <p>** Can under line word/sentence using "< u>" tag: </p>
+    <p>** Generate random paragraph with no. of words: use lorem+number(ex. lorem40): </p>
+    <br>
+    <p><s>=Lorem</s> ipsum <b>dolor sit amet consectetur adipisicing elit</b>. Animi voluptas magni autem, laborum modi quae, ex quos architecto eveniet iusto facere expedita cum optio laudantium ducimus quod explicabo, quasi numquam?</p>
+    <p><u>=Lorem</u> ipsum,<i>dolor sit amet consectetur adipisicing elit.</i> Autem, velit repellat assumenda saepe eveniet doloribus fuga officiis doloremque, suscipit, ex quos! Minus ducimus quidem fuga sequi atque reiciendis quo in numquam. Fugiat quaerat laborum quis cumque provident eaque facere explicabo.</p>
+
+    <p>** write in mathematical term ex. 2 ki power 5(2^5) using superscript : 2 < sup> 5 < /sup></p>
+    <p>
+       = 2<sup>5</sup>
+    </p>
+    <p>** write in chemistry term ex. o base 2 using subscript : O < sub> 2 < /sub></p>
+    <p>
+       = O<sub>2</sub>
+    </p>
+
+    <Pre>
+        summary: 
+
+        < b>     - <b>Bold text</b>
+        < i>     - <i>Italic text</i>
+        < em>    - <em>Emphasized text</em>
+        < mark>  - <mark>Marked text</mark>
+        < small> - <small>Smaller text</small>
+        < del>   - <del>Deleted text</del>
+        < ins>   - <ins>Inserted text</ins>
+        < sup>   - 4<sup>Superscript text</sup>
+        < sub>   - O<sub>Subscript text</sub>
+        < strong>- <strong>Important text/bold</strong>
+
+        Use the style attribute for styling HTML elements
+        Use background-color for background color
+        Use color for text colors
+        Use font-family for text fonts
+        Use font-size for text sizes
+        Use text-align for text alignment
+
+    </Pre>
+
+    <p>**Address tag: using "< address>" tag</p>
+    <address>
+        Written by John Doe.<br> 
+        Visit us at:<br>
+        Example.com<br>
+        Box 564, Disneyland<br>
+        USA
+    </address>
+    <br>
+    <br>
+
+    <p>**The HTML cite element defines the title of a work.</p>
+    <p>**Browsers usually display cite elements in italic.</p>
+        
+    <img src="img_the_scream.jpg" width="220" height="277" alt="The Scream">
+    <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>    
+    <br>
+    <br>
+
+    <p>**Change direction of a sentence/text</p>
+    <bdo dir="rtl">This line will be written from right to left</bdo>  
+    
+    <pre>
+        summary:
+
+        < abbr>	      : Defines an abbreviation or acronym
+        < address>    : Defines contact information for the author/owner of a document
+        < bdo>	      : Defines the text direction
+        < blockquote> :	Defines a section that is quoted from another source
+        < cite>	      : Defines the title of a work
+        < q>	      : Defines a short inline quotation
+
+    </pre>
+</body>
+</html>

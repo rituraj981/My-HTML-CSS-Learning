@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form2</title>
+</head>
+<body>
+    <h2>Job Application: </h2>
+    <form>
+
+        <!-- creating boxes where name,email,ph.number can be entered -->
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">    
+        <br>
+        <br>
+
+        <label for="emailid">Email id: </label>
+        <input types="email" id="emailid" name="emailid">
+        <br>
+        <br>
+
+        <label for="phonenumber">phone:</label>
+        <input type="tel" id="phonenumber" name="phonenumber">
+        <br>
+        <br>
+
+        <!-- Creating a file uploading place -->
+
+        <label for="fileupload">Resume:</label>
+        <input type="file" name="fileupload" id="fileupload" >
+
+        <br>
+        <br>
+
+        <!-- creating counter specially for numbers -->
+
+        <label for="counter">Experience (in years): </label>
+        <input type="number" name="counter" id="counter" min="0" max="20">
+
+        <br>
+        <br>
+
+        <!-- creating fieldset & checkboxes to select -->
+        <fieldset>
+            <legend>Skills:</legend>
+
+            <input type="checkbox" name="checkbox" id="checkbox1">
+            <label for="checkbox1">Html</label>
+            
+            
+            <input type="checkbox" name="checkbox" id="checkbox2">
+            <label for="checkbox2">Css</label>
+
+           
+            <input type="checkbox" name="checkbox" id="checkbox">
+            <label for="checkbox3">JavaScript</label>
+
+        </fieldset>
+        <br>
+
+        <!-- creating dropdown -->
+
+        <label for="educationtype">Higest Education:</label>
+        <select name="educationtype" id="educationtype">
+            <option value="a">10th</option>
+            <option value="b">12th</option>
+            <option value="c">Graduation</option>
+            <option value="d">postgraduation</option>
+            <option value="e">PHD</option>
+
+        </select>
+        <br>
+        <br>
+
+        <!-- To code HTML for a radio button so that the user can select only one,
+         
+
+        -->
+
+         <!-- creating fieldset with radio's to select -->
+        <fieldset>
+            <legend>Availability:</legend>
+            
+            <label for="radio1">Full-time</label>
+            <input type="radio" name="radio1" id="radio1">
+            <br/>
+
+            <label for="radio2">Part-time</label>
+            <input type="radio" name="radio2" id="radio2">
+            <br/>
+
+        </fieldset>
+
+        <!-- creating commentbox -->
+
+        <label for="textarea">Comments:</label>
+        <br>
+        <textarea name="textarea1" id="textarea" cols="30" rows="10"></textarea>
+ 
+        <br>
+        <br>
+        <input type="button" value="submit" id>
+
+
+
+
+
+
+
+    </form>
+</body>
+</html>

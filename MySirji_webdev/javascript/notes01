@@ -1,0 +1,389 @@
+******************************
+  4 ways to declare variables
+******************************
+
+var x;
+let y;
+const z;
+a=z;
+
+***************
+  let and var
+***************
+
+var ----> function scope
+let ----> block scope
+
+ex:
+
+<script>
+    function f1()
+    {
+      {
+         var a = 10;
+         let b =10;
+         alert("a="+a+"b="+b)
+      }
+      // alert creates a alert pop-op on the screen
+      alert("a="+a)
+      alert("b="+b) //error
+    }
+    f(1)
+</script>
+
+<script>
+
+        var x=25;
+        document.write(x+" - "+typeof(x) + "<br>") 
+        // typeof() is function used to know the type of variable
+        
+    </script>
+
+***************
+  Data Types:
+***************
+
+1. String:      "Hello", "4", "99999999" etc.
+2. Number(int):  5, 4, 7 etc.
+3. BigInt:       326897653907472379065, 879235682536287 etc.
+4. Null
+5. Undefined
+6. Object
+7. Symbol
+8. Boolean: yes, No
+
+
+
+***************
+  Operators:
+***************
+
+1. Arithmetic Operators
+
+    Addition
+    Subtraction
+    Multiplication
+    Division
+    Modulus
+    Exponent
+
+2. Unary Operators
+    Increment Operator
+      ++x -> preincrement
+      x++ -> postincrement
+
+    Decrement Operator
+      --x -> pre Decrement
+      x-- -> post Decrement
+
+3. Assignment Operators
+    = -> Assignment ---------------ex: x = 5
+    += -> Addition Assignment -----ex: x += 5 -> x = x + 5
+    -= -> Subtraction Assignment
+    *= -> Multiplication Assignment --ex: x *= 7 -> x = x * 7
+    /= -> Division Assignment
+    %= -> Modulus Assignment
+
+    **= -> Exponent Assignment
+    <<= -> Left Shift Assignment
+    >>= -> Right Shift Assignment
+    &= -> Bitwise AND Assignment
+    ^= -> Bitwise XOR Assignment
+    |= -> Bitwise OR Assignment
+    >>>= -> Right Shift Assignment with Zero Fill
+    <<= -> Left Shift Assignment with Zero Fill
+    &= -> Bitwise AND Assignment with Zero Fill
+    ^= -> Bitwise XOR Assignment with Zero Fill
+    |= -> Bitwise OR Assignment with Zero Fill
+    **= -> Exponent Assignment with Zero Fill
+    <<= -> Left Shift Assignment with Zero Fill
+    >>= -> Right Shift Assignment with Zero Fill
+    &= -> Bitwise AND Assignment with Zero Fill
+    ^= -> Bitwise XOR Assignment with Zero Fill
+    |= -> Bitwise OR Assignment with Zero Fill
+    **= -> Exponent Assignment with Zero Fill
+
+4. Comparison Operators
+    > -> less than (Comparison)
+    < -> greater than (Comparison)
+    >= -> greater than or equal to (Comparison)
+    <= -> less than or equal to (Comparison)
+    == -> equal to (equality)
+    != -> not equal to (equality)
+    === -> Identity
+    !== -> Identity
+
+5. Logical Operators
+    && - AND - True && True -> True
+             - False && True/False -> false
+             - True && False -> false
+
+    || - OR  - False || False -> False
+             - False || True -> True
+             - True || False/True -> True
+
+    ! - NOT  - !True -> False
+             - !False -> True 
+
+6. Bitwise Operators
+    & - AND - 1 & 1 -> 1 
+    - 1 & 0 -> 0
+    - 0 & 1 -> 0
+    - 0 & 0 -> 0
+    | - OR - 1 | 1 -> 1
+    - 1 | 0 -> 1
+    - 0 | 1 -> 1
+    - 0 | 0 -> 0
+    ^ - XOR - 1 ^ 1 -> 0
+    - 1 ^ 0 -> 1
+    - 0 ^ 1 -> 1
+    - 0 ^ 0 -> 0
+    ~ - NOT - ~1 -> -2
+    - ~0 -> -1
+    << - Left Shift - 1 << 1 -> 2
+    - 1 << 2 -> 4
+    - 1 << 3 -> 8
+    - 1 << 4 -> 16
+    - 1 << 5 -> 32
+
+7. Conditional (ternary) Operator
+    condition ? expression1 : expression2
+        {
+          condition -> boolean expression (True False)
+          expression1 -> expression if condition is true
+          expression2 -> expression if condition is false
+        }
+    ex:
+       var z = x > y ?  x : y;
+
+       if x > y = true then z = x
+       if x > y = False then z = y
+
+8. Comma Operator
+9. Relational Operators
+10. Type Operators
+11. Special Operators
+
+
+************************
+  Control Instruction:
+************************
+
+1. Decision Control
+   
+(1) if
+
+    ex:
+        if (condition)
+        // output of condition: non-zero -> true / zero -> False 
+        {
+          //statement
+        } 
+
+(2) if-else
+
+    ex:
+        if(condition)
+        // output of condition: true -> statement1 / False -> statement2
+        {
+          //statement1
+        }
+        else
+        {
+          //statement2
+        }
+
+
+(3) if-else ladder
+
+    Syntax:
+          if(condition1)
+          {
+            // statement1
+            // statement2
+          }
+          else if(condition2)
+          {
+            // statement3
+          }
+          else if(condition3)
+          {
+            // statement4
+          }
+          else
+          {
+            // statement5
+          }
+    
+    ex:
+    <script>
+        var x = 40
+        if(x>85)
+        {
+            document.write("Marks = "+x+", Grade - A+"+"<br>");
+        }
+        else if(x>70)
+        {
+            document.write("Marks = "+x+", Grade - A"+"<br>");
+        }
+        else if(x>60)
+        {
+            document.write("Marks = "+x+", Grade - B"+"<br>");
+        }
+        else if(x>50)
+        {
+            document.write("Marks = "+x+", Grade - C"+"<br>");
+        }
+        else
+        {
+            document.write("Marks = "+x+", Grade - D"+"<br>");
+        } 
+    </script>
+
+0r
+
+Nesting:
+
+    if(condition1)
+    {
+      //statement1
+      //statement2
+    }
+    else(condition2)
+    {
+      if(condition1)
+      {
+        //statement1
+      }
+      else
+      {
+        if(condition)
+        {
+          //statement1
+        }
+        else
+        {
+          //statement2
+        }
+      }
+    }
+  
+  ex:
+    <script>
+        var x = 40
+        if(x>85)
+        {
+            document.write("Marks = "+x+", Grade - A+"+"<br>");
+        }
+        else 
+        {
+            if(x>70)
+            {
+                document.write("Marks = "+x+", Grade - A"+"<br>");
+            }
+            else 
+            {
+                if(x>60)
+                {   
+                    document.write("Marks = "+x+", Grade - B"+"<br>");
+                }
+                else 
+                {
+                    if(x>50)
+                    {
+                        document.write("Marks = "+x+", Grade - C"+"<br>");
+                    }    
+                    else
+                    { 
+                        document.write("Marks = "+x+", Grade - D"+"<br>")
+                    }
+                }
+            }
+        }    
+    </script>
+
+
+// In shortcut / easy / Optimise form
+
+<script>
+    var x = 40
+    if(x>85)
+      document.write("Marks = "+x+", Grade - A+"+"<br>");
+    else if(x>70)
+      document.write("Marks = "+x+", Grade - A"+"<br>");
+    else if(x>60)
+      document.write("Marks = "+x+", Grade - B"+"<br>");
+    else if(x>50)
+      document.write("Marks = "+x+", Grade - C"+"<br>");
+    else 
+      document.write("Marks = "+x+", Grade - D"+"<br>")
+</script>
+
+(4). Conditional Operator
+
+    condition ? expression1 : expression2
+          condition -> boolean expression (True / False)
+          expression1 -> expression if condition is true
+          expression2 -> expression if condition is false
+    
+    ex:
+        var z = x > y ?  x : y;
+
+        if x > y = true then z = x
+        if x > y = False then z = y
+
+
+(5). Switch
+
+syntax:
+
+switch(expression)
+{
+  case value1:
+        statements
+  case value2:
+        statements
+  case value3:
+        statements
+  ............
+  ............
+  default:
+        statements
+}
+
+(6). break: It terminates current loop or switch statement
+            and transfers program control to the statement
+            following the terminated statement.
+
+syntax:
+
+switch(expression)
+{
+  case value1:
+        statements
+        break;
+  case value2:
+        statements
+        break;
+  case value3:
+        statements
+        break;
+  ............
+  ............
+  default:
+        statements
+}
+
+
+2. Iterative Control
+
+(1). While loop
+
+syntax:
+
+while(condition)
+{
+  statements
+}
+
+(2). Do While loop

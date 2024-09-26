@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ 
+    <style>    
+
+        /* Element selector: p tag is used for selecting 
+           paragraphs color */
+
+        p{
+            color:aqua;
+        }
+        article{
+            color:blue;
+        }
+
+        /* Id selector: first providing id in body 
+           to perticular text then using it's id to style */
+
+        #article2{
+            color:blueviolet;
+            background-color:aquamarine;
+        }
+
+        /* Class selector: first providing class=paraclass in tags
+           then using .paraClass to style*/
+
+        .paraclass{
+            background-color: rgb(204, 0, 255);
+            text-align: center;
+        }
+
+        /* Group selector: provide all the 
+           names of tag where you want to use group tag*/
+        
+        /* p,article{
+            width: 400px;
+        } */
+    </style>
+</head>
+<body>
+    
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Magni cumque asperiores tempora qui explicabo doloribus libero 
+        reprehenderit, aut, earum dolorem nesciunt vel laboriosam unde 
+        repellat dignissimos optio neque. Id molestiae commodi corrupti libero quisquam 
+        necessitatibus minima asperiores! Repellendus, reiciendis blanditiis!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus numquam voluptate, 
+        deserunt et illo possimus quo alias minima rem suscipit?</p>
+    <p></p>
+    <article>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Inventore magni dolores doloribus tempora sapiente nam 
+        deleniti asperiores eius non veniam magnam, eveniet 
+        numquam, ipsum odit illo facere esse. Ea dolore delectus 
+        deleniti iusto modi pariatur suscipit rerum, dolorum eveniet eius!
+    </article>
+
+    <!-- Providing id to provide id to article so can be used in id selector for styling -->
+    <article id="article2">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        Hic quae reiciendis, perspiciatis dolores quidem officia 
+        blanditiis ad ab! Itaque quod accusantium a soluta, 
+        impedit omnis cumque recusandae dignissimos dolor vero!
+    </article>
+
+    <p class="paraclass">
+        Lorem ipsum dolor sit amet consectetur adipisicing.
+    </p>
+
+    <p class="paraclass">
+        Lorem ipsum dolor sit amet consectetur.
+    </p>
+
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+    </p>
+
+    <article>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Quas dicta odit repellat voluptatum facere laudantium harum 
+        aliquam eos eligendi non.
+    </article>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet consectetur.</p>
+</body>
+</html>

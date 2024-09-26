@@ -1,0 +1,134 @@
+RAM - running things
+SSD - everything 
+
+compiled:
+1. first need to compile, then need to run
+2. Usually don't compile if there is an error in the code
+3. ex: c++, java, Rust, Golang etc.
+
+interpreted:
+- Cause:
+1. it converts high level code into machine code at runtime.
+2. Can run paritally if the erroe comes later.
+3. ex: javascript, python, ruby, PHP etc.
+
+
+
+Dynamic languages:
+
+
+Static languages:
+
+
+Multi threaded: 
+
+- C++, java, golang splits their load of code on 
+- multiple cores that help processes be optimal
+
+
+single threaded: 
+
+- javascript only use one core to run
+- That is why it is considered to be a bad language for scalable systems
+
+
+
+
+************************
+        javascript
+************************
+
+
+
+****************
+    Variables 
+****************
+
+
+- let, var, const (can't be changed after one use)
+
+
+codes:
+
+var a = 1;
+console.log(a); // 1
+
+
+var a = 1;
+a = 2;
+console.log(a); // 2
+
+
+let a = 1;
+console.log(a); // 1
+
+let a = 1;
+a = 2;
+console.log(a); // 2
+
+const a = 1;
+console.log(a); // 1
+
+const a = 1;
+a = 2;
+console.log(a); // error: Assignment to constant variable.
+
+
+
+
+*********************************************
+    Data types - strings, number, booleans
+*********************************************
+
+let firstname = "Rituraj";
+let age = 23;
+let isMarried = false;
+
+console.log("this persons name is " + firstname + "and sge is" + age);
+
+// output: this persons name is Rituraj and sge is 23
+
+
+// or
+
+console.log("This person name is");
+console.log(firstname);
+console.log("and he is");
+console.log(age);
+
+// output: 
+// This person name is
+// Rituraj
+// and he is
+// 23
+
+
+///////////////////////////////////
+
+let firstname = "Rituraj";
+let age = 23;
+let isMarried = true;
+
+if(isMarried == true){
+    console.log(firstname + " is married");
+} else {
+    console.log(firstname + " is not married");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+loops - for loop

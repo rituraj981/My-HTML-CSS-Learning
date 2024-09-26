@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Data Types</h3>
+    <p>There are 7 data types in JavaScript:</p>
+
+    <script>
+
+        var x=25;
+        document.write(x+" - "+typeof(x) + "<br>") 
+        // typeof() is function used to know the type of variable
+        
+    </script>
+
+    <script>   
+        var y=BigInt(879342635782678);
+        y=y+BigInt(5)
+        document.write(y+" - "+typeof(y)) 
+        document.write("<br>") // this code is only to create new line
+    </script>
+
+    <script>
+        var z=true;
+        document.write(typeof(z))
+        document.write("<br>")
+    </script>
+
+    <script>
+
+        var A=null;
+        document.write(typeof(A))
+        document.write("<br>")
+
+    </script>
+
+    <script>
+
+        var B=Symbol("Hi");
+        document.write(typeof(B))
+        document.write("<br>") 
+
+        var c = Symbol("Hi");
+        var d = Symbol("hi");
+
+        document.write((x==y))
+        document.write("<br>")
+
+    </script>
+
+    <script>
+
+        var e = {a:3, b:5}
+        document.write(e.a+" "+e.b+" "+typeof(e));
+        document.write("<br>")
+
+    </script>
+
+
+
+
+
+
+    <h3>Operators</h3>
+
+    <h4>1. Arithmetic Operators</h4>   
+
+    <script>
+        var x = 5+4;
+        document.write("x = 5+4 :"+"<h5>x = "+ x +"<h5>");
+    </script>
+
+    <script>
+        var x = 5-4;
+        document.write("x = 5-4 = "+ x);
+        document.write("<br>")
+    </script>
+
+    <script>
+        var x = 5*4;
+        document.write("x = 5*4 = "+ x);
+        document.write("<br>")
+    </script>
+
+    <script>
+        var x = 5/4;
+        document.write("x = 5/4 = "+ x);
+        document.write("<br>")
+    </script>
+
+    <script>
+        var x = 5%4;
+        document.write("x = 5%4 = "+ x);
+        document.write("<br>")
+    </script>
+
+    <script>
+        var x = 5**4;
+        document.write("x = 5**4 = "+ x);
+        document.write("<br>")
+    </script>
+
+    <script>
+        var x = 5**-4;
+        document.write("x = 5**-4 = "+ x);
+        document.write("<br>")
+    </script>
+
+    <script>
+        var x = ++4;
+    </script>
+
+    <h4>2. Unary Operators</h4>
+
+    <p>
+    ++x -> Pre increment
+    x++ -> Post increment
+
+    --1 -> Pre decrement
+    1-- -> Post decrement
+    </p>
+
+    <script>
+        var x = 5;
+
+        document.write("x = "+x+"<br>");
+        x++;
+        document.write("x = "+x+"<br>");
+        ++x;
+        document.write("x = "+x+"<br>");
+        x--;
+        document.write("x = "+x+"<br>");
+        --x;
+    </script>
+
+    <h4>3. Comparison Operator</h4>
+
+    <script>
+        var x = 5>6;
+        document.write("x = "+x+"<br>");
+    </script>
+
+    <script>
+        var x=5==5
+        document.write("x = "+x+"<br>");
+    </script>
+
+    <script>
+        var x = 4!=="5"
+        document.write("x = "+x+"<br>");
+    </script>
+
+    <script>
+        var x=5==="5"
+        document.write("x = "+x+"<br>");
+    </script>
+
+    <h4>4. logical operators</h4>
+
+    <script>
+        var x = !(5>6)
+        document.write("x = "+x+"<br>");
+    </script>
+
+    <script>
+        var x = 5>0 && 5>6
+        document.write("x = "+x+"<br>");
+    </script>
+
+    <h4>1. Decision Control</h4>
+
+    <h5>(1). if:</h5>
+    <script>
+        var x = 4
+        if(x>2)
+            document.write("x = "+x+"in if block"+"<br>");
+        document.write("x = "+x+"outside if block"+"<br>");
+        document.write("<br>")
+    </script>
+
+    <script>
+        var x = 4
+        if(x>5)
+            document.write("x = "+x+"in if block"+"<br>");
+        document.write("x = "+x+"outside if block"+"<br>");
+    </script>
+
+    <h5>(2). if... else..</h5>
+    <script>
+        var x = 4
+        if(x>5){
+            document.write("x = "+x+"in if block"+"<br>");
+        }
+        else
+        {
+            document.write("x = "+x+"in else block"+"<br>");
+        }
+    </script>
+
+    <h5>(3). if else ladder / nesting</h5>
+    <script>
+        var x = 40
+        if(x>85)
+            document.write("Marks = "+x+", Grade - A+"+"<br>");
+        else if(x>70)
+            document.write("Marks = "+x+", Grade - A"+"<br>");
+        else if(x>60)
+            document.write("Marks = "+x+", Grade - B"+"<br>");
+        else if(x>50)
+            document.write("Marks = "+x+", Grade - C"+"<br>");
+        else 
+            document.write("Marks = "+x+", Grade - D"+"<br>")
+    </script>
+
+    <h6>Or</h6>
+
+    <script>
+        var x = 40
+        if(x>85)
+        {
+            document.write("Marks = "+x+", Grade - A+"+"<br>");
+        }
+        else if(x>70)
+        {
+            document.write("Marks = "+x+", Grade - A"+"<br>");
+        }
+        else if(x>60)
+        {
+            document.write("Marks = "+x+", Grade - B"+"<br>");
+        }
+        else if(x>50)
+        {
+            document.write("Marks = "+x+", Grade - C"+"<br>");
+        }
+        else
+        {
+            document.write("Marks = "+x+", Grade - D"+"<br>");
+        } 
+    </script>
+
+    <h6>Or</h6>
+    <script>
+        var x = 40
+        if(x>85)
+        {
+            document.write("Marks = "+x+", Grade - A+"+"<br>");
+        }
+        else 
+        {
+            if(x>70)
+            {
+                document.write("Marks = "+x+", Grade - A"+"<br>");
+            }
+            else 
+            {
+                if(x>60)
+                {   
+                    document.write("Marks = "+x+", Grade - B"+"<br>");
+                }
+                else 
+                {
+                    if(x>50)
+                    {
+                        document.write("Marks = "+x+", Grade - C"+"<br>");
+                    }    
+                    else
+                    { 
+                        document.write("Marks = "+x+", Grade - D"+"<br>")
+                    }
+                }
+            }
+        }    
+    </script>
+    <h5>4. Conditional Operator</h5>
+    <script>
+        var z = 4>5 ?  "Yes" : "No";
+        document.write(z);
+    </script>
+
+    <h5>5. Switch</h5>
+    <script>
+        var x = 5
+        switch(x)
+        {
+            case 1:
+                document.write("x = "+x+"<br>");
+            case 2:
+                document.write("x = "+x+"<br>");
+            case 3:
+                document.write("x = "+x+"<br>");
+            case 4:
+                document.write("x = "+x+"<br>");
+            case 5:
+                document.write("x = "+x+" default<br>");
+        }
+        document.write("End"+" - Outside switch<br>")
+    </script>
+
+    <h5>6. Break</h5>
+    <script>
+        var x = 5
+        switch(x)
+        {
+            case 1:
+                document.write("x = "+x+"<br>");
+                break;
+            case 2:
+                document.write("x = "+x+"<br>");
+                break;
+            case 3:
+                document.write("x = "+x+"<br>");
+            case 4:
+                document.write("x = "+x+"<br>");
+            case 5:
+                document.write("x = "+x+" default<br>");
+                break;
+            default:
+                document.write("default<br>");
+        }
+
+    </script>
+
+    <h4>2. Iterative Control</h4>
+    <h5>(1). While</h5>
+
+    <script>
+        var i = 1
+        while(i<=5)
+        {
+            document.write("hi"+1+"<br>")
+            i++
+        }
+        document.write("i = "+i+"outside while block <br>")
+    </script>
+    <br>
+    <script>
+        var i = 1
+        while(i<=12)
+        {
+            document.write("hi"+1+"<br>")
+            i+=10
+        }
+        document.write("i = "+i+"outside while block <br>")
+    </script>
+
+    <h5>(2). Do while loop</h5>
+</body>
+</html>
